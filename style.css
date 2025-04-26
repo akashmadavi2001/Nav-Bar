@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+}
+
+.tab {
+    padding: 10px;
+    background-color: #666;
+    border-radius: 10px;
+    display: flex;
+}
+
+.tab input {
+    display: none;
+}
+
+.tab label {
+    position: relative;
+    width: 50px;
+    height: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tab label h6 {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 2px 5px;
+    letter-spacing: 1px;
+    background-color: #666;
+    opacity: 0;
+    color: white;
+    box-shadow: 0 0 0 4px black, 0 -2px 0 3px #ffffff70;
+}
+
+.tab input:checked+label h6 {
+    opacity: 1;
+}
+
+.tab i {
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.5s;
+    padding: 0;
+}
+
+.tab label:hover i {
+    color: white;
+}
+
+.tab input:checked+label i {
+    color: white;
+    top: -25px;
+    padding: 5px 10px;
+    background-color: #666;
+    border-radius: 5px;
+    box-shadow: 0 0 0 4px black, 0 2px 0 3px #ffffff70;
+}

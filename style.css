@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111;
+    background-color: #000;
 }
 
 .tab {
@@ -37,19 +37,18 @@ body {
     position: absolute;
     bottom: -20px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%) scale(0);
     transition: 0.5s;
     border-radius: 5px;
     padding: 2px 5px;
     letter-spacing: 1px;
     background-color: #666;
-    opacity: 0;
     color: white;
     box-shadow: 0 0 0 4px black, 0 -2px 0 3px #ffffff70;
 }
 
 .tab input:checked+label h6 {
-    opacity: 1;
+    transform: translate(-50%) scale(1);
 }
 
 .tab i {
@@ -59,7 +58,6 @@ body {
     left: 50%;
     transform: translate(-50%);
     transition: 0.5s;
-    padding: 0;
 }
 
 .tab label:hover i {

@@ -44,7 +44,8 @@ body {
     letter-spacing: 1px;
     background-color: #666;
     color: white;
-    box-shadow: 0 0 0 4px black, 0 -2px 0 3px #ffffff70;
+    box-shadow: 0 0 0 4px black,
+        0 -2px 0 3px #ffffff70;
 }
 
 .tab input:checked+label h6 {
@@ -70,5 +71,6 @@ body {
     padding: 5px 10px;
     background-color: #666;
     border-radius: 5px;
-    box-shadow: 0 0 0 4px black, 0 2px 0 3px #ffffff70;
+    box-shadow: 0 0 0 4px black,
+        0 2px 0 3px #ffffff70;
 }
